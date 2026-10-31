@@ -292,7 +292,14 @@ figure.fill figcaption{color:#555}
 .slide[data-g="달걀"] .vs div{padding:10px 15px;font-size:16px;line-height:1.5}
 .slide[data-g="달걀"] .vs{gap:8px}
 .slide[data-g="달걀"] .mini{width:66px!important;height:66px!important}
-.slide[data-g="달걀"] .shell{padding:9px 10px!important}</style>
+.slide[data-g="달걀"] .shell{padding:9px 10px!important}/* ===== 강조: 파란 배경 + 노란 글씨 ===== */
+:root{--blue:#003cb5}
+.tell b,.card b:not(.t),.vs .m b:not(.k),.lead b,.fact b,.period b{background:var(--blue);color:var(--yellow);padding:0 6px;border-radius:6px;font-weight:800;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.card.good,.vs .d{background:var(--blue);color:#fff}
+.card.good b.t,.vs .d b.k{color:var(--yellow)}
+.card.good b:not(.t),.vs .d b:not(.k){background:none;color:var(--yellow);padding:0;font-weight:800}
+.s-hero .h1 mark{background:var(--blue);color:var(--yellow);padding:1px 8px;border-radius:8px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.shell .u{color:var(--blue)}</style>
 </head>
 <body>
 <div class="top">
